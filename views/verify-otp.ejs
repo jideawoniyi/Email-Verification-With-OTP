@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Verify OTP</h1>
+   
+    <form method="post" action="/verify-otp">
+      <label for="otp">OTP</label><br>
+      <input type="text" name="otp" required><br>
+      <input type="hidden" name="phoneNumber" value="<%= phoneNumber %>"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

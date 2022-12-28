@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Sent Successfully</title>
+    <style>
+      #success-message {
+        background-color: #00FF00;
+        color: #FFFFFF;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      #success-message p {
+        margin: 0;
+      }
+
+      #close-button {
+        background-color: transparent;
+        border: 0;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="success-message">
+      <p>Email sent successfully!</p>
+      <button id="close-button">Close</button>
+    </div>
+    <script>
+      window.setTimeout(function() {
+        document.getElementById('success-message').style.display = 'none';
+      }, 7000);
+      document.getElementById('close-button').addEventListener('click', function() {
+        document.getElementById('success-message').style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
